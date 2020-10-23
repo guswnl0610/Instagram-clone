@@ -1,0 +1,65 @@
+.overall-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+  height: 92vh;
+}
+
+.login-section {
+  padding: 0px 40px;
+  height: 380px;
+}
+
+.register-section {
+  height: 63px;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  padding: 10px 0;
+  margin: 5px 0;
+  width: 350px;
+}
+
+.logo-container {
+  margin: 1em auto;
+}
+
+.logo-container img {
+  width: 175px;
+  margin: 22px auto 12px;
+}
+
+.idpw-container {
+  display: flex;
+  flex-flow: column;
+  height: 348px;
+}
+
+.idpw-container input {
+  height: 36px;
+  margin-bottom: 5px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  color: #8e8e8e;
+}
+
+.idpw-container button {
+  background-color: #0095f6;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+}
+
+.forgotpw-container {
+  margin: 0 auto;
+}
