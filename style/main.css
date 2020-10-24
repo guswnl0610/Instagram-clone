@@ -1,0 +1,9 @@
+.overall-container {
+  margin: 0 auto;
+}
+
+.left-main {
+  width: 614px;
+  display: flex;
+  flex-direction: column;
+}

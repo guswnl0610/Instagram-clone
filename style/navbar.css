@@ -1,0 +1,82 @@
+nav {
+  background-color: white;
+  height: 55px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.nav-container {
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  width: 33%;
+}
+
+.nav-left img {
+  height: 29px;
+}
+
+.nav-right {
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-img {
+  width: 22px;
+  height: 22px;
+  margin-left: 22px;
+}
+
+.nav-right .profile-pic {
+  border-radius: 50%;
+}
+
+.nav-search {
+  position: relative;
+  width: 100%;
+}
+
+.nav-search input {
+  width: 200px;
+  text-align: center;
+  padding: 5px 7px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.nav-search input:focus {
+  outline: none;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 70px;
+  top: 27%;
+  width: 12px;
+  height: 12px;
+}
+
+.search-focused {
+  left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-search {
+    display: none;
+  }
+  .nav-right {
+    justify-content: flex-end;
+  }
+}
