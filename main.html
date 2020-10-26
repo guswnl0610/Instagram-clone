@@ -7,7 +7,7 @@
     <link href="style/common.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style/navbar.css">
     <link href="style/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="main_right.css">
+    <link rel="stylesheet" href="style/main_right.css">
   </head>
   <body>
     <nav>
@@ -15,11 +15,14 @@
         <div class="nav-left">
           <img src="img/logo_text.png" alt="INSTAGRAM logo">
         </div>
-        <div class="nav-right">
+        <div class="nav-center">
           <div class="nav-search">
             <input type="text" placeholder="검색">
             <img class='search-icon' src="img/search.png" alt="돋보기">
           </div>
+        </div>
+        <div class="nav-right">
+          
           <img class="nav-img" src="img/home.png" alt="home">
           <img class="nav-img" src="img/direct.png" alt="dm">
           <img class="nav-img" src="img/explore.png" alt="explore">
@@ -36,7 +39,13 @@
         <section class="feed-container">
 
           <article class="feed">
-            <div class="feed-header"></div>
+            <div class="feed-header">
+              <div class="profile">
+                <img src="img/profile.png" alt="progile img">
+                <span>chaelincl</span>
+              </div>
+              <img src="img/more.png" alt="more">
+            </div>
             <div class="feed-img-container">
               <img src="/img/feedimg/CL.jpeg" alt="feedphoto">
             </div>
@@ -47,7 +56,9 @@
                   <img src="img/comment.png" alt="comment">
                   <img src="img/direct.png" alt="direct message">
                 </div>
-                <div class="bar-center"></div>
+                <div class="bar-center">
+                  <!-- <button></button> -->
+                </div>
                 <div class="bar-right">
                   <img src="img/bookmark.png" alt="bookmark">
                 </div>
@@ -56,6 +67,7 @@
                 <p>좋아요 21개</p>
               </div>
               <div class="feed-content">
+                <span class="id">chaelincl</span>
                 <span>안녕하세용</span>
                 <button>더 보기</button>
               </div>
@@ -85,22 +97,18 @@
         </section>
         <section class="recommend">
           <div class="reco-header">
-            <span>회원님을 위한 추천</span>
-            <span>모두 보기</span>
+            <span class="reco-text1">회원님을 위한 추천</span>
+            <span class="reco-text2">모두 보기</span>
           </div>
           <div class="reco-list">
             <div class="reco-left">
-              <div class="img-container">
-                <img src="img/profile.png" alt="recommend-profile-img">
-              </div>
-              <div class="reco-center">
-                <p class="id">hoxax</p>
-                <p>회원님을 위한 추천</p>
-              </div>
-              <div class="reco-right">
-                팔로우
-              </div>
+              <img src="img/profile.png" alt="recommend-profile-img">
             </div>
+            <div class="reco-center">
+              <p class="id">hoxax</p>
+              <p>회원님을 위한 추천</p>
+            </div>
+            <span>팔로우</span>
           </div>
         </section>
         <section class="info">

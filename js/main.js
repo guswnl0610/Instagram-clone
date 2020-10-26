@@ -1,7 +1,6 @@
 
 
 //navbar-search 돋보기 이동
-
 function controll_navbar_search(){
     const navbar_input = document.querySelector('.nav-search input');
     const navbar_search_icon = document.querySelector('.search-icon');
