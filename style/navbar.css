@@ -19,7 +19,7 @@ nav {
 .nav-left {
   display: flex;
   align-items: center;
-  width: 32%;
+  width: 300px;
   margin-left: 50px;
 }
 
@@ -28,7 +28,7 @@ nav {
 }
 
 .nav-right {
-  /* width: 33%; */
+  width: 300px;
   display: flex;
   justify-content: flex-end;
   align-items: center;

@@ -101,10 +101,10 @@
 }
 
 .reco-center .id {
-  font-size: 14px;
   width: fit-content;
-  color: #262626;
+  font-size: 14px;
   font-weight: bold;
+  color: #262626;
 }
 
 .reco-center .id:hover {
@@ -117,21 +117,23 @@
 }
 
 .info {
+  height: fit-content;
   margin-top: 17px;
   overflow: hidden;
-  height: fit-content;
 }
+
 .info-list {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
+
 .info-list li {
+  display: inline;
   margin: 0 2px;
   padding: 0;
-  display: inline;
 }
 
 .info-list li a {
@@ -141,8 +143,9 @@
 }
 
 li + li::before {
-  content: "· ";
+  content: '· ';
   color: #c7c7c7;
+  font-size: 11px;
 }
 
 .info p {

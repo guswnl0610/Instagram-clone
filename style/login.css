@@ -11,7 +11,7 @@
 
 .login-section {
   padding: 0px 40px;
-  height: 380px;
+  height: 395px;
 }
 
 section {
@@ -54,6 +54,13 @@ section {
 .idpw-container input:focus {
   outline: none;
   border: 1px solid #a8a8a8;
+}
+
+.idpw-container .user-id-warning,
+.idpw-container .user-pw-warning {
+  display: none;
+  font-size: 12px;
+  color: #751717;
 }
 
 .login-btn {
