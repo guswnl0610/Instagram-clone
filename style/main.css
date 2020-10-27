@@ -196,6 +196,10 @@
   align-items: center;
 }
 
+.comment-left {
+  width: 520px;
+}
+
 .comment .comment-left span {
   font-size: 14px;
 }
@@ -204,8 +208,23 @@
   font-weight: bold;
 }
 
-.feed-comments .comment img {
+.comment-right {
+  display: flex;
+  align-items: center;
+}
+
+.comment-right:hover {
+  cursor: pointer;
+}
+
+.comment .comment-right img {
   width: 14px;
+}
+
+.comment .comment-right span {
+  font-size: 12px;
+  color: #af4444;
+  margin-left: 10px;
 }
 
 .feed-hour {

@@ -32,6 +32,26 @@
       </div>
     </div>
   </nav>
+  <!-- 네비게이션 바 focus하거나 클릭했을 때 나오는 친구들 -->
+  <section class="navbar-search-container">
+  </section>
+  <section class="navbar-profile-container">
+    <div class="navbar-profile-item">
+      <img src="/img/profile.png" alt="profile-img">
+      <span>프로필</span>
+    </div>
+    <div class="navbar-profile-item">
+      <img src="/img/bookmark.png" alt="profile-img">
+      <span>저장됨</span>
+    </div>
+    <div class="navbar-profile-item">
+      <img src="/img/settings.png" alt="profile-img">
+      <span>설정</span>
+    </div>
+    <div class="navbar-profile-item navbar-logout">
+      <span>로그아웃</span>
+    </div>
+  </section>
 
   <section class="overall-container">
     <section class="left-main">
@@ -86,7 +106,20 @@
                   <span class="id">Mengkki</span>
                   <span>와! 정말 데단해~</span>
                 </div>
-                <img src="img/heart.png" alt="comment heart">
+                <div class="comment-right">
+                  <img class="non-clicked" src="img/heart.png" alt="comment heart">
+                  <span>삭제</span>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="comment-left">
+                  <span class="id">Mengkki</span>
+                  <span>안녕하세용~~</span>
+                </div>
+                <div class="comment-right">
+                  <img class="non-clicked" src="img/heart.png" alt="comment heart">
+                  <span>삭제</span>
+                </div>
               </div>
             </div>
             <span class="feed-hour">7시간 전</span>
@@ -143,6 +176,8 @@
       </section>
     </section>
   </section>
+  <script src="js/navbar.js"></script>
+  <script src="js/comment.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -20,7 +20,7 @@ nav {
   display: flex;
   align-items: center;
   width: 300px;
-  margin-left: 50px;
+  padding-left: 50px;
 }
 
 .nav-left img {
@@ -84,10 +84,85 @@ nav {
   left: 10px;
 }
 
+.navbar-search-container {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  width: 250px;
+  height: fit-content;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 11;
+  transform: translate(-50%, 0);
+}
+
+.navbar-search-item {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.navbar-search-item img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.navbar-search-item span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.navbar-profile-container {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  z-index: 12;
+}
+
+.navbar-profile-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+  padding: 10px 5px;
+}
+
+.navbar-profile-container span {
+  font-size: 14px;
+}
+
+.navbar-profile-container .navbar-profile-item img {
+  width: 16px;
+  margin: 0 15px;
+}
+
+.navbar-logout {
+  border-top: 1px solid #dbdbdb;
+  padding: 0 20px;
+}
+
 @media screen and (max-width: 500px) {
   .nav-search {
     display: none;
   }
+
+  .navbar-search-container {
+    display: none;
+  }
+
   .nav-right {
     justify-content: flex-end;
   }
@@ -95,6 +170,6 @@ nav {
 
 @media screen and (max-width: 1000px) {
   .nav-left {
-    margin-left: 0;
+    padding-left: 0;
   }
 }
