@@ -33,8 +33,7 @@
     </div>
   </nav>
   <!-- 네비게이션 바 focus하거나 클릭했을 때 나오는 친구들 -->
-  <section class="navbar-search-container">
-  </section>
+  <section class="navbar-search-container"></section>
   <section class="navbar-profile-container">
     <div class="navbar-profile-item">
       <img src="/img/profile.png" alt="profile-img">
@@ -57,7 +56,7 @@
     <section class="left-main">
       <section class="story-container">
         <div class="story">
-          <div class="profile-img-container">
+          <div class="profile-img-container no-story">
             <img src="img/feedimg/CL.jpeg" alt="profile-img">
           </div>
           <div class="story-id">chaelincl</div>
@@ -66,18 +65,18 @@
       <section class="feed-container">
         <article class="feed">
           <div class="feed-header">
-            <div class="profile">
+            <div class="feed-header-left">
               <div class="profile-img-container">
                 <img src="img/feedimg/CL.jpeg" alt="progile img">
               </div>
               <span>chaelincl</span>
             </div>
-            <img class="more" src="img/more.png" alt="more">
+            <img src="img/more.png" alt="more">
           </div>
           <div class="feed-img-container">
             <img src="/img/feedimg/CL.jpeg" alt="feedphoto">
           </div>
-          <section class="feed-comment-container">
+          <section class="feed-body">
             <div class="feed-bar">
               <div class="bar-left">
                 <img src="img/heart.png" alt="heart">
@@ -91,13 +90,13 @@
                 <img src="img/bookmark.png" alt="bookmark">
               </div>
             </div>
-            <div class="feed-likes">
-              <p>좋아요 21개</p>
-            </div>
+            <p class="feed-likes-counter">좋아요 21개</p>
             <div class="feed-content">
               <span class="id">chaelincl</span>
-              <span>안녕하세용</span>
-              <button>더 보기</button>
+              <span class="content">아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼
+                내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~</span>
+              <span class="content-hide"></span>
+              <button class="feed-content-morebtn">더 보기</button>
             </div>
             <p class="comment-counter">댓글 1개 모두 보기</p>
             <div class="feed-comments">

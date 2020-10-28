@@ -1,5 +1,6 @@
 const navbar_input = document.querySelector('.nav-search input');
 
+//temporary data
 const my_data = [
   { user_id: 'chaelinCL', profile_pic: '/img/profile/chaelinCL.jpg' },
   { user_id: 'daraxxi', profile_pic: '/img/profile/daraxxi.jpg' },
@@ -15,7 +16,7 @@ const my_data = [
 
 function search_id() {
   const search_container = document.querySelector('.navbar-search-container');
-  //일단 기존에있던뇨속들 전부 삭제
+  //일단 기존에있던 차일드노드들 전부 삭제
   while (search_container.firstChild) search_container.removeChild(search_container.firstChild);
   const input_value = navbar_input.value.trim();
   const filtered_data = my_data.filter((user) => {
@@ -34,6 +35,7 @@ function search_id() {
     const search_items = document.querySelector('.navbar-search-item');
     search_items.style.justifyContent = 'unset';
   } else {
+    // 데이터 없으면 없다고표시
     search_container.innerHTML += `
     <div class="navbar-search-item">
         <span>검색된 유저가 없습니다.</span>

@@ -57,7 +57,7 @@
 }
 
 .feed-container {
-  width: 614px;
+  width: 100%;
   overflow: hidden;
   background-color: white;
   border: 1px solid #dbdbdb;
@@ -74,7 +74,7 @@
   align-items: center;
 }
 
-.feed-header .profile {
+.feed-header .feed-header-left {
   display: flex;
   align-items: center;
 }
@@ -95,11 +95,11 @@
   border-radius: 50%;
 }
 
-.more {
+.feed-header img {
   width: 24px;
 }
 
-.feed-header .profile span {
+.feed-header .feed-header-left span {
   margin-left: 10px;
   font-size: 14px;
   font-weight: bold;
@@ -107,11 +107,16 @@
 
 /* feed content area */
 
+.feed-img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
 .feed-img-container img {
   width: 100%;
 }
 
-.feed-comment-container {
+.feed-body {
   padding: 0 15px;
 }
 
@@ -155,14 +160,8 @@
   justify-content: flex-end;
 }
 
-.feed-likes {
-  height: 18px;
-  margin-top: 6px;
-  margin-bottom: 10px;
-}
-
-.feed-likes p {
-  margin: 0;
+.feed-likes-counter {
+  margin: 6px 0 10px 0;
   font-size: 14px;
   font-weight: bold;
 }
@@ -175,7 +174,11 @@
   font-size: 14px;
 }
 
-.feed-content button {
+.feed-content .content-hide {
+  display: none;
+}
+
+.feed-content .feed-content-morebtn {
   appearance: none;
   border: none;
   background-color: white;
@@ -210,7 +213,9 @@
 
 .comment-right {
   display: flex;
+  width: 90px;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .comment-right:hover {
@@ -278,5 +283,19 @@ button:focus {
   } */
   .left-main {
     position: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* .right-main {
+    display: none;
+  } */
+  /* .overall-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  } */
+  .left-main {
+    width: 100%;
   }
 }
