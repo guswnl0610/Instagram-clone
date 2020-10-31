@@ -32,7 +32,6 @@
   flex-flow: column;
   align-items: center;
   width: 80px;
-  /* background-color: black; */
 }
 
 .story .profile-img-container {
@@ -41,7 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/img/rainbow.png');
+  background-image: url('../img/rainbow.png');
   background-size: contain;
 }
 
@@ -59,10 +58,16 @@
 .feed-container {
   width: 100%;
   overflow: hidden;
+  /* background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px; */
+}
+
+article {
+  margin-bottom: 70px;
   background-color: white;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
-  margin-bottom: 60px;
 }
 
 /* feed header area */
@@ -85,7 +90,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/img/rainbow.png');
+  background-image: url('../img/rainbow.png');
   background-size: contain;
 }
 
@@ -105,10 +110,14 @@
   font-weight: bold;
 }
 
+.feed-header .feed-header-left span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* feed content area */
 
 .feed-img-container {
-  width: 100%;
   overflow: hidden;
 }
 
@@ -183,6 +192,10 @@
   border: none;
   background-color: white;
   color: #8e8e8e;
+}
+
+.morebtn-invisible {
+  display: none;
 }
 
 /* comment area */
@@ -260,8 +273,15 @@
 .newcomment-form button {
   border: none;
   background-color: white;
-  color: #c0e0fc;
   font-weight: bold;
+}
+
+.newcomment-btn-lightblue {
+  color: #c0e0fc;
+}
+
+.newcomment-btn-blue {
+  color: #0095f6;
 }
 
 input:focus {
@@ -272,29 +292,16 @@ button:focus {
   outline: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
   .right-main {
     display: none;
   }
-  /* .overall-container {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-  } */
   .left-main {
     position: unset;
   }
 }
 
-@media screen and (max-width: 600px) {
-  /* .right-main {
-    display: none;
-  } */
-  /* .overall-container {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-  } */
+@media screen and (max-width: 640px) {
   .left-main {
     width: 100%;
   }
